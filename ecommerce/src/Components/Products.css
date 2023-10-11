@@ -1,0 +1,80 @@
+
+#Container{
+    padding: 10px;
+}
+#cartBtn{
+    padding: 8px 25px; 
+    background-color: teal;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.ListContainer{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:5%;
+    margin-top: 50px;
+
+}
+.itemDiv{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 10px;
+    padding: 10px;
+}
+.Image{
+    width: 100%;
+    height:200px
+}
+.name{
+    font-weight: bold;
+}
+
+.name~p{
+    font-size: 14px;
+}
+
+.priceSection{
+    display: flex;
+    justify-content: space-between;
+}
+
+.addToCart{
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    background-color: teal;
+    color: white;
+    cursor: pointer;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 3% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 80%;
+    max-height: 80vh;
+    overflow: auto;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 30px;
+}
